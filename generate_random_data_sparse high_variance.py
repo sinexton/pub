@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
 import random
-p = 10
-q = 2
+
+n = 7
 result = []
-for i in range( p ):
-	for i2 in range( q**i ):
-		result.append( random.randint( 0, q**(p-i) - 1 ))
-random.shuffle(result)
+for i in range( n ):
+	for i2 in range( 2**i ):
+		result.append( random.randint( 0, 2**(n-i) - 1 ))
+random.shuffle( result )
+
+print( result )

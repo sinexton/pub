@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
 
-p = 7
-q = 2
-p p.times.map{|i| ( q**i ).times.map{ rand( q**(p-i) ) }}.flatten.shuffle
+n = 7
+p n.times.map{|i| ( 2**i ).times.map{ rand( 2**(n-i) ) }}.flatten.shuffle
